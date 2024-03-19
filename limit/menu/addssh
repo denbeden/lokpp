@@ -5,7 +5,7 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 echo -e "\e[32mloading...\e[0m"
 clear
 # Valid Script
-# My Telegram : https://t.me/MRZST0RE
+# My Telegram : https://t.me/muslimvpn
 # ==========================================
 # Color
 GREEN='\e[32m'
@@ -103,7 +103,7 @@ clear
 
 cat > /var/www/html/ssh-$Login.txt <<-END
 ◇━━━━━━━━━━━━━━━━━◇
-     MRZ Tunneling 
+     MUSLIM Tunneling 
 ◇━━━━━━━━━━━━━━━━━◇
 Format SSH OVPN Account
 ◇━━━━━━━━━━━━━━━━━◇
@@ -205,7 +205,7 @@ TEXT="
 💥 » <code>Aktif     :</code> <code>${masaaktif} Hari</code>
 ◇━━━━━━━━━━━━━━━━━━◇
 <i>Notif Transaksi Akun SSH...</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"💥 ORDER 💥","url":"https://t.me/MRZST0RE"},{"text":"💥 TESTIMONI 💥","url":"https://t.me/mrzstorre"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"💥 ORDER 💥","url":"https://t.me/muslimvpn"},{"text":"💥 TESTIMONI 💥","url":"https://t.me/muslimvpn"}]]}'
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
 clear

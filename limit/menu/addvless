@@ -184,7 +184,7 @@ TEXT="
 💥 » <code>Aktif     :</code> <code>${masaaktif} Hari</code>
 ◇━━━━━━━━━━━━━━━━━━◇
 <i>Notif Transaksi Akun VLESS...</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"💥 ORDER 💥","url":"https://t.me/MRZST0RE"},{"text":"💥TESTIMONI 💥","url":"https://t.me/mrzstorre"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"💥 ORDER 💥","url":"https://t.me/muslimvpn"},{"text":"💥TESTIMONI 💥","url":"https://t.me/muslimvpn"}]]}'
 curl -s --max-time $TIME -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 
 clear

@@ -27,8 +27,8 @@ clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "  Welcome To SCRIPT ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Auther : ${green} PEYXMRZ ® ${NC}${YELLOW}(${NC} ${green} PEYXMRZ ${NC}${YELLOW})${NC}"
-echo -e " © Recode By My Self PEYXMRZ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "  Auther : ${green} MUSLIM-VPNMUSLIM ® ${NC}${YELLOW}(${NC} ${green} MUSLIM-VPNMUSLIM ${NC}${YELLOW})${NC}"
+echo -e " © Recode By My Self MUSLIM-VPNMUSLIM${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2

@@ -4,7 +4,7 @@
 # //	Author:	Ferdianx
 # //	Dscription: Xray Menu Management
 # //	email: adminfa4573620.com
-# //  telegram: https://t.me/MRZST0RE
+# //  telegram: https://t.me/muslimvpn
 # //====================================================
 # // font color configuration | BHOIKFOST YAHYA AUTOSCRIPT
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }

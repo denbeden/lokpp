@@ -4,7 +4,7 @@
 # //	Author:	ferdianx 
 # //	Dscription: Xray Menu Management
 # //	email: admin@fa4573620.com
-# //  telegram: https://t.me/MRZST0RE
+# //  telegram: https://t.me/muslimvpn
 # //====================================================
 # // font color configuration | FERDIANX AUTOSCRIPT
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }

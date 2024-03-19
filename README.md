@@ -62,7 +62,7 @@ wget https://raw.githubusercontent.com/denbeden/lokpp/main/update.sh && chmod +x
 <a href="#"><img title="ABOUT-ME" src="https://img.shields.io/badge/ABOUT ME-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="https://github.com/denbeden"><img title="Author" src="https://img.shields.io/badge/AUTHOR-PEYX-orange.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/denbeden"><img title="Author" src="https://img.shields.io/badge/AUTHOR-MUSLIM-VPN-orange.svg?style=for-the-badge&logo=github"></a>
 </p>
 <p align="center">
 <a href="https://t.me/Peyyx" target=”_blank”><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=Telegram&label=Telegram&message=Click%20Here&color=blue"></a>

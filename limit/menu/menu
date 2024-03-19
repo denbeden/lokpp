@@ -163,7 +163,7 @@ echo -e " $BLUE│$NC [${r}08${NC}]$WHITE BOT NOTIF$NC    $ORANGE•$NC [${r}17$
 echo -e " $BLUE│$NC [${r}09${NC}]$WHITE BANNER$NC       $ORANGE•$NC [${r}18${NC}] BACKUP       $NC$ORANGE•$NC [${r}00${NC}]$WHITE EXIT MENU$NC   $BLUE│$NC"
 echo -e " $BLUE╰──────────────────────────────────────────────────────────╯${NC}"
 echo -e " ╭──────────────────────────────────────────────────────────╮" | lolcat
-echo -e " $BLUE|$NC $BG                   • MRZ TUNNELING •                    $NC $BLUE│$NC"
+echo -e " $BLUE|$NC $BG                   • MUSLIM TUNNELING •                    $NC $BLUE│$NC"
 echo -e " ╰──────────────────────────────────────────────────────────╯" | lolcat
 read -p " Select menu : " opt
 echo -e ""

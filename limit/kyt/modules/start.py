@@ -6,7 +6,7 @@ async def start(event):
 	inline = [
 [Button.inline("PANEL CREATE ACCOUNT","menu")],
 [Button.url("TELEGRAM GROUP","https://t.me/Mrz_VPN"),
-Button.url("ORDER SCRIPT","https://t.me/MRZST0RE")]]
+Button.url("ORDER SCRIPT","https://t.me/muslimvpn")]]
 	sender = await event.get_sender()
 	val = valid(str(sender.id))
 	if val == "false":

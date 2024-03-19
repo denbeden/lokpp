@@ -4,9 +4,9 @@
 # //	Author:	Ferdianx 
 # //	Dscription: Xray Menu Management
 # //	email: admin@fa4573620.com
-# //  telegram: https://t.me/MRZST0RE
+# //  telegram: https://t.me/muslimvpn
 # //====================================================
-# // font color configuration | PEYXMRZ AUTOSCRIPT
+# // font color configuration | MUSLIM-VPNMUSLIM AUTOSCRIPT
 red() { echo -e "\\033[32;1m${*}\\033[0m"; }
 IP=$(curl -s ipv4.icanhazip.com)
 HOST="$(cat /etc/xray/domain)"
