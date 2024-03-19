@@ -53,8 +53,8 @@ if [[ "$certifacate" -le "0" ]]; then
 sts="${Error}"
 echo -e " ${RED}Masa Aktif Script Kamu Sudah Habis${NC}"
 echo -e " ${RED}Silahkan Contact Admin Untuk Perpanjang ${NC}"
-echo -e " ${GREEN}Whatsapp = 6283151636921 ${NC}"
-echo -e " ${GREEN}Telegram = Peyyx ${NC}"
+echo -e " ${GREEN}Whatsapp = 6283890977190 ${NC}"
+echo -e " ${GREEN}Telegram = @muslimvpn ${NC}"
 sleep 3
 exit 1
 else
@@ -294,7 +294,6 @@ x)
 menu
 ;;
 *)
-echo -e ""
 menu
 ;;
 esac
