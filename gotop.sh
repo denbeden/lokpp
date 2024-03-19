@@ -21,6 +21,6 @@ gotop_latest="$(curl -s https://api.github.com/repos/xxxserxxx/gotop/releases | 
     chronyc sourcestats -v
     chronyc tracking -v
     
-    wget https://raw.githubusercontent.com/denbeden/lokpp/master/limit/bbr.sh &&  chmod +x bbr.sh && ./bbr.sh
+    wget https://raw.githubusercontent.com/denbeden/lokpp/main/limit/bbr.sh &&  chmod +x bbr.sh && ./bbr.sh
 print_success "Swap 1 G"
 }

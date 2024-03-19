@@ -27,11 +27,11 @@ clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
 echo ""
 rm -f /usr/bin/user
-username=$(curl -sS https://raw.githubusercontent.com/denbeden/lokpp/master/perizinan | grep $MYIP | awk '{print $2}')
+username=$(curl -sS https://raw.githubusercontent.com/denbeden/lokpp/main/perizinan | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
 rm -f /usr/bin/e
 today=`date -d "0 days" +"%Y-%m-%d"`
-valid=$(curl -sS https://raw.githubusercontent.com/denbeden/lokpp/master/perizinan | grep $MYIP | awk '{print $3}')
+valid=$(curl -sS https://raw.githubusercontent.com/denbeden/lokpp/main/perizinan | grep $MYIP | awk '{print $3}')
 echo "$valid" >/usr/bin/e
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
@@ -248,7 +248,7 @@ bw
 ;;
 17)
 clear
-wget https://raw.githubusercontent.com/denbeden/lokpp/master/update.sh && chmod +x update.sh && ./update.sh
+wget https://raw.githubusercontent.com/denbeden/lokpp/main/update.sh && chmod +x update.sh && ./update.sh
 ;;
 18)
 clear
@@ -276,7 +276,7 @@ fixcert
 ;;
 24)
 clear
-wget https://raw.githubusercontent.com/denbeden/lokpp/master/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh && rm udp-custom.sh
+wget https://raw.githubusercontent.com/denbeden/lokpp/main/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh && rm udp-custom.sh
 ;;
 25)
 clear
