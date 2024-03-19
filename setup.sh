@@ -16,8 +16,8 @@ NC='\e[0m'
 red='\e[1;31m'
 green='\e[0;32m'
 TIMES="10"
-CHATID="6011254481"
-KEY="6761535040:AAGlQOMt4S9GYf5BX_h2NcvtnpX1ZZQMoy4"
+CHATID="6331389328"
+KEY="7097156228:AAF4Qav6b_8ag9iaKwhdIF1E9tOpSDiQUzI"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
 export IP=$( curl -sS icanhazip.com )
@@ -27,8 +27,8 @@ clear;clear;clear
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo -e "  Welcome To SCRIPT ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Auther : ${green} MUSLIM-VPNMUSLIM ® ${NC}${YELLOW}(${NC} ${green} MUSLIM-VPNMUSLIM ${NC}${YELLOW})${NC}"
-echo -e " © Recode By My Self MUSLIM-VPNMUSLIM${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "  Auther : ${green} MUSLIM-VPN ® ${NC}${YELLOW}(${NC} ${green} MUSLIM-VPN ${NC}${YELLOW})${NC}"
+echo -e " © Recode By My Self MUSLIM-VPN${YELLOW}(${NC} 2024 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -74,9 +74,9 @@ echo -e "\e[32mloading...\e[0m"
 clear
 clear
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/arsy14x/vip/main/perizinan | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/denbeden/lokpp/main/perizinan | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/arsy14x/vip/main/perizinan | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/denbeden/lokpp/main/perizinan | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
