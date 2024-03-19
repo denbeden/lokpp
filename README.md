@@ -1,6 +1,6 @@
 - 𝕎𝔼𝕃ℂ𝕆𝕄𝔼 𝕋𝕆 𝕄𝕐 𝔾𝕀𝕋ℍ𝕌𝔹 
 
-- 👋 𝑯𝒊 𝑰'𝒂𝒎 𝑷𝒆𝒚𝒙
+- 👋 Hi i am MUSLIM VPN
 
 ### INSTALL SCRIPT 
 ```
