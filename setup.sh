@@ -1,3 +1,5 @@
+#!/bin/bash
+
 apt upgrade -y
 apt update -y
 apt install lolcat -y
@@ -406,7 +408,10 @@ debconf-set-selections <<<"keyboard-configuration keyboard-configuration/unsuppo
 debconf-set-selections <<<"keyboard-configuration keyboard-configuration/variantcode string "
 debconf-set-selections <<<"keyboard-configuration keyboard-configuration/variant select English"
 debconf-set-selections <<<"keyboard-configuration keyboard-configuration/xkb-keymap select "
+# go to root
 cd
+
+# Edit file /etc/systemd/system/rc-local.service
 cat > /etc/systemd/system/rc-local.service <<-END
 [Unit]
 Description=/etc/rc.local
@@ -421,15 +426,31 @@ SysVStartPriority=99
 [Install]
 WantedBy=multi-user.target
 END
+
+# nano /etc/rc.local
 cat > /etc/rc.local <<-END
+#!/bin/sh -e
+# rc.local
+# By default this script does nothing.
 exit 0
 END
+
+# Ubah izin akses
 chmod +x /etc/rc.local
+
+# enable rc local
 systemctl enable rc-local
 systemctl start rc-local.service
+
+# disable ipv6
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
+
+#update
+# set time GMT +7
 ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+
+# set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 print_success "Password SSH"
 }
