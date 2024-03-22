@@ -11,9 +11,8 @@ update() {
 #!/bin/bash
 
 # Konfigurasi informasi pengguna
-#username="denbeden"
-#token="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"
-
+username="denbeden"
+token="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"
 # Mengatur nama pengguna dan email GitHub
 #git config --global user.name "denbeden"
 #git config --global user.email "$vpsvpn.cloud@gmail.com"
@@ -22,10 +21,10 @@ update() {
 #git config --global credential.helper "!f() { echo password=$token; }; f"
 
 # Menjalankan operasi Git (contoh: git push)
+    git status
     git add perizinan
     git commit -m "izinip"
-git push https://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@github.com/denbeden/lokpp.git
-    git config --global credential.helper "!f() { echo password=$token; }; f"
+    git push https://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@github.com/denbeden/lokpp.git
 }
 
 # tambah izin ip
