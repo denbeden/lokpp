@@ -15,9 +15,11 @@ async def create_vmess(event):
 		async with bot.conversation(chat) as exp:
 			await event.respond("**Choose Expiry Day**",buttons=[
 [Button.inline(" 3 Day ","3"),
+Button.inline(" 5 Day ","5"),
 Button.inline(" 7 Day ","7")],
 [Button.inline(" 30 Day ","30"),
-Button.inline(" 60 Day ","60")]])
+Button.inline(" 60 Day ","60"),
+Button.inline(" 9999 Day ","9999")]])
 			exp = exp.wait_event(events.CallbackQuery)
 			exp = (await exp).data.decode("ascii")
 		await event.edit("Processing.")
@@ -66,37 +68,38 @@ Button.inline(" 60 Day ","60")]])
 			z1 = json.loads(z1)
 			msg = f"""
 ━━━━━━━━━━━━━━━━━
-**🔰 Xray/Vmess Account 🔰**
+**Xray/Vmess Account**
 ━━━━━━━━━━━━━━━━━
-**» Remarks            :** `{z["ps"]}`
-**» Domain             :** `{z["add"]}`
-**» User Quota       :** `{pw} GB`
-**» Port DNS          :** `443, 53`
-**» port TLS           :** `222-1000`
-**» Port NTLS        :** `80, 8080, 8081-9999`
-**» Port GRPC        :** `443`
-**» User ID              :** `{z["id"]}`
-**» AlterId              :** `0`
-**» Security            :** `auto`
-**» NetWork           :** `(WS) or (gRPC)`
-**» Path TLS           :** `(/multi path)/vmess`
-**» Path NLS          :** `(/multi path)/vmess`
-**» Path Dynamic  :** `http://BUG.COM`
-**» ServiceName   :** `vmess-grpc`
+**»** `Remarks       :` `{z["ps"]}`
+**»** `Domain        :` `{z["add"]}`
+**»** `User Quota    :` `{pw} GB`
+**»** `Port DNS      :` `443, 53`
+**»** `port TLS      :` `222-1000`
+**»** `Port NTLS     :` `80, 8080, 8081-9999`
+**»** `Port GRPC     :` `443`
+**»** `ser ID       :` `{z["id"]}`
+**»** `AlterId       :` `0`
+**»** `Security      :` `auto`
+**»** `NetWork       :` `(WS) or (gRPC)`
+**»** `Path TLS      :` `(/multi path)/vmess`
+**»** `Path NLS      :` `(/multi path)/vmess`
+**»** `Path Dynamic  :` `http://BUG.COM`
+**»** `ServiceName   :` `vmess-grpc`
 ━━━━━━━━━━━━━━━━━
-**» Link TLS     :** 
+**»** Link TLS :**
 `{b[0].strip("'").replace(" ","")}`
 ━━━━━━━━━━━━━━━━━
-**» Link NTLS    :**
+**»** Link NTLS :**
 `{b[1].strip("'").replace(" ","")}`
 ━━━━━━━━━━━━━━━━━
-**» Link GRPC    :** 
+**»** Link GRPC :**
 `{b[2].strip("'")}`
 ━━━━━━━━━━━━━━━━━
-**» Format OpenClash :** https://{DOMAIN}:81/vmess-{user}.txt
+**»** Format OpenClash :**
+https://{DOMAIN}:81/vmess-{user}.txt
 ━━━━━━━━━━━━━━━━━
-**» Expired Until :** `{later}`
-**» ⭐@muslimvpn**
+**»** `Expired Until :` `{later}`
+**»** @muslimvpn
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -159,37 +162,37 @@ Button.inline(" 60 Menit ","60")]])
 			z1 = json.loads(z1)
 			msg = f"""
 ━━━━━━━━━━━━━━━━━
-**🔰 Xray/Vmess Account 🔰**
+**Tril Xray/Vmess Account**
 ━━━━━━━━━━━━━━━━━
-**» Remarks           :** `{z["ps"]}`
-**» Domain             :** `{z["add"]}`
-**» User Quota       :** `Unlimited`
-**» Port DNS          :** `443, 53`
-**» port TLS           :** `222-1000`
-**» Port NTLS        :** `80, 8080, 8081-9999`
-**» Port GRPC        :** `443`
-**» User ID              :** `{z["id"]}`
-**» AlterId              :"" `0`
-**» Security            :** `auto`
-**» NetWork           :** `(WS) or (gRPC)`
-**» Path TLS           :** `(/multi path)/vmess`
-**» Path NLS          :** `(/multi path)/vmess`
-**» Path Dynamic  :** `http://BUG.COM`
-**» ServiceName    :** `vmess-grpc`
+**»** `Remarks       :` `{z["ps"]}`
+**»** `Domain        :` `{z["add"]}`
+**»** `User Quota    :` `Unlimited`
+**»** `Port DNS      :` `443, 53`
+**»** `port TLS      :` `222-1000`
+**»** `Port NTLS     :` `80, 8080, 8081-9999`
+**»** `Port GRPC     :` `443`
+**»** `User ID       :` `{z["id"]}`
+**»** `AlterId       :"" `0`
+**»** `Security      :` `auto`
+**»** `NetWork       :` `(WS) or (gRPC)`
+**»** `Path TLS      :` `(/multi path)/vmess`
+**»** `Path NLS      :` `(/multi path)/vmess`
+**»** `Path Dynamic  :` `http://BUG.COM`
+**»** `ServiceName   :` `vmess-grpc`
 ━━━━━━━━━━━━━━━━━
-**» Link TLS     :**
+**»** Link TLS :**
 `{b[0].strip("'").replace(" ","")}`
 ━━━━━━━━━━━━━━━━━
-**» Link NTLS    :**
+**»** Link NTLS :**
 `{b[1].strip("'").replace(" ","")}`
 ━━━━━━━━━━━━━━━━━
-**» Link GRPC    :**
+**»** Link GRPC :**
 `{b[2].strip("'")}`
 ━━━━━━━━━━━━━━━━━
-**» Format OpenClash :** https://{DOMAIN}:81/vmess-{z["ps"]}.txt
+**»** Format OpenClash :** https://{DOMAIN}:81/vmess-{z["ps"]}.txt
 ━━━━━━━━━━━━━━━━━
-**» Expired Until:** `{exp} Minutes`
-» ⭐@muslimvpn
+**»** `Expired Until :` `{exp} Minutes`
+**»** @muslimvpn
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -213,7 +216,7 @@ async def cek_vmess(event):
 {z}
 
 **Shows Logged In Users Vmess**
-**» ⭐@muslimvpn**
+**»** @muslimvpn
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
@@ -256,15 +259,15 @@ Button.inline(" DELETE VMESS ","delete-vmess")],
 [Button.inline("‹ Main Menu ›","menu")]]
 		z = requests.get(f"http://ip-api.com/json/?fields=country,region,city,timezone,isp").json()
 		msg = f"""
-━━━━━━━━━━━━━━━━━━━━━━━ 
-**🔰 VMESS MANAGER 🔰**
-━━━━━━━━━━━━━━━━━━━━━━━ 
-💥 **» Service:** `VMESS`
-💥 **» Hostname/IP:** `{DOMAIN}`
-💥 **» ISP:** `{z["isp"]}`
-💥 **» Country:** `{z["country"]}`
-⭐ **» @muslimvpn**
-━━━━━━━━━━━━━━━━━━━━━━━ 
+━━━━━━━━━━━━━━━━━━━━━━━
+**VMESS MANAGER**
+━━━━━━━━━━━━━━━━━━━━━━━
+**»** `Service :` `VMESS`
+**»** `Host    :` `{DOMAIN}`
+**»** `ISP     :` `{z["isp"]}`
+**»** `Country :` `{z["country"]}`
+**»** @muslimvpn
+━━━━━━━━━━━━━━━━━━━━━━━
 """
 		await event.edit(msg,buttons=inline)
 	sender = await event.get_sender()
