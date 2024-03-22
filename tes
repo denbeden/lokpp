@@ -7,24 +7,10 @@ NC='\e[0m'
 clear
 # functions
 update() {
-
-#!/bin/bash
-
-# Konfigurasi informasi pengguna
-username="denbeden"
-token="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"
-# Mengatur nama pengguna dan email GitHub
-#git config --global user.name "denbeden"
-#git config --global user.email "$vpsvpn.cloud@gmail.com"
-
-# Mengatur otentikasi menggunakan Personal Access Token (PAT)
-#git config --global credential.helper "!f() { echo password=$token; }; f"
-
-# Menjalankan operasi Git (contoh: git push)
     git status
     git add perizinan
     git commit -m "izinip"
-    git push https://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@github.com/denbeden/lokpp.git
+    git push https://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@github.com/denbeden/lokpp.git
 }
 
 # tambah izin ip
@@ -365,7 +351,5 @@ case $jwb in
     0 | 00) clear ; exit ;;
     *) clear ; bash news ;;
 esac
-file="tes"
-#rm -rf $file
 echo "check your github to see this added ip permission"
 
