@@ -1,4 +1,5 @@
 #!/bin/bash
+#entah
 # warna
 bg="\e[1;97;101m"
 cyan='\033[1;36m'
