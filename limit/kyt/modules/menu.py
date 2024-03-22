@@ -4,11 +4,11 @@ from kyt import *
 @bot.on(events.CallbackQuery(data=b'menu'))
 async def menu(event):
 	inline = [
-[Button.inline(" SSH OVPN MANAGER ","ssh")],
-[Button.inline(" VMESS MANAGER ","vmess"),
-Button.inline(" VLESS MANAGER ","vless")],
-[Button.inline(" TROJAN MANAGER ","trojan"),
-Button.inline(" SHDWSK MANAGER ","shadowsocks")],
+[Button.inline(" MENU SSH ","ssh")],
+[Button.inline(" MENU VMESS ","vmess"),
+Button.inline(" MENU VLESS ","vless")],
+[Button.inline(" MENU TEOJAN ","trojan"),
+Button.inline(" MENU SHDWSK ","shadowsocks")],
 [Button.inline(" CHECK VPS INFO ","info"),
 Button.inline(" OTHER SETTING ","setting")],
 [Button.inline(" ‹ Back Menu › ","start")]]
@@ -20,7 +20,7 @@ Button.inline(" OTHER SETTING ","setting")],
 		except:
 			await event.reply("Akses Ditolak")
 	elif val == "true":
-		sh = f' cat /etc/ssh/.ssh.db | grep "###" | wc -l'
+		sh = f' cat /etc/ssh/.ssh.db | grep "#ssh#" | wc -l'
 		ssh = subprocess.check_output(sh, shell=True).decode("ascii")
 		vm = f' cat /etc/vmess/.vmess.db | grep "###" | wc -l'
 		vms = subprocess.check_output(vm, shell=True).decode("ascii")
@@ -36,25 +36,24 @@ Button.inline(" OTHER SETTING ","setting")],
 		city = subprocess.check_output(citsy, shell=True).decode("ascii")
 
 		msg = f"""
-		
 █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
 █░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█
 █░░║║║╠─║─║─║║║║║╠─░░█
 █░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█
 █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
 ━━━━━━━━━━━━━━━━━━━━━━━
-**🔰 ADMIN PANEL MENU 🔰**
+**ADMIN PANEL MENU**
 ━━━━━━━━━━━━━━━━━━━━━━━
-** » OS           :** `{namaos.strip().replace('"','')}`
-** » CITY        :** `{city.strip()}`
-** » DOMAIN :** `{DOMAIN}`
-** » IP VPS     :** `{ipsaya.strip()}`
+**»** `OS     :` `{namaos.strip().replace('"','')}`
+**»** `CITY   :` `{city.strip()}`
+**»** `DOMAIN :` `{DOMAIN}`
+**»** `IP VPS :` `{ipsaya.strip()}`
 
-** » 🌐 SSH OVPN    :** `{ssh.strip()}` __account__
-** » 🌐 XRAY VMESS  :** `{vms.strip()}` __account__
-** » 🌐 XRAY VLESS  :** `{vls.strip()}` __account__
-** » 🌐 XRAY TROJAN :** `{trj.strip()}` __account__
-━━━━━━━━━━━━━━━━━━━━━━━ 
+**»** `SSH    :` `{ssh.strip()}` __account__
+**»** `VMESS  :` `{vms.strip()}` __account__
+**»** `VLESS  :` `{vls.strip()}` __account__
+**»** `TROJAN :` `{trj.strip()}` __account__
+━━━━━━━━━━━━━━━━━━━━━━━
 """
 		x = await event.edit(msg,buttons=inline)
 		if not x:

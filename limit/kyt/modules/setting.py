@@ -176,14 +176,14 @@ Button.inline(" RESTORE","restore")],
 [Button.inline("‹ Main Menu ›","menu")]]
 		z = requests.get(f"http://ip-api.com/json/?fields=country,region,city,timezone,isp").json()
 		msg = f"""
-━━━━━━━━━━━━━━━━━━━━━━━ 
-**🔰 PREMIUM PANEL MENU 🔰**
-━━━━━━━━━━━━━━━━━━━━━━━ 
-💥 **» Hostname/IP:** `{DOMAIN}`
-💥 ** » ISP:** `{z["isp"]}`
-💥 ** » Country:** `{z["country"]}`
-🤖 »@muslimvpn
-━━━━━━━━━━━━━━━━━━━━━━━ 
+━━━━━━━━━━━━━━━━━━━━━━━
+PREMIUM PANEL MENU
+━━━━━━━━━━━━━━━━━━━━━━━
+**»** `Hostname/IP :` `{DOMAIN}`
+**»** `ISP         :` `{z["isp"]}`
+**»** `Country     :` `{z["country"]}`
+**»** @muslimvpn
+━━━━━━━━━━━━━━━━━━━━━━━
 """
 		await event.edit(msg,buttons=inline)
 	sender = await event.get_sender()
@@ -205,14 +205,14 @@ Button.inline(" RESTART SERVICE","resx")],
 [Button.inline("‹ Main Menu ›","menu")]]
 		z = requests.get(f"http://ip-api.com/json/?fields=country,region,city,timezone,isp").json()
 		msg = f"""
-━━━━━━━━━━━━━━━━━━━━━━━ 
-**🔰 PREMIUM PANEL MENU 🔰**
-━━━━━━━━━━━━━━━━━━━━━━━ 
-💥 ** » Hostname/IP:** `{DOMAIN}`
-💥 ** » ISP:** `{z["isp"]}`
-💥 ** » Country:** `{z["country"]}`
-🤖 »@muslimvpn 
-━━━━━━━━━━━━━━━━━━━━━━━ 
+━━━━━━━━━━━━━━━━━━━━━━━
+PREMIUM PANEL MENU
+━━━━━━━━━━━━━━━━━━━━━━━
+**»** `Hostname/IP :` `{DOMAIN}`
+**»** `ISP         :` `{z["isp"]}`
+**»** `Country     :` `{z["country"]}`
+**»** @muslimvpn
+━━━━━━━━━━━━━━━━━━━━━━━
 """
 		await event.edit(msg,buttons=inline)
 	sender = await event.get_sender()
