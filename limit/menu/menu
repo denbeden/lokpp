@@ -163,138 +163,38 @@ echo -e " $BLUE│$NC [${r}08${NC}]$WHITE BOT NOTIF$NC    $ORANGE•$NC [${r}17$
 echo -e " $BLUE│$NC [${r}09${NC}]$WHITE BANNER$NC       $ORANGE•$NC [${r}18${NC}] BACKUP       $NC$ORANGE•$NC [${r}00${NC}]$WHITE EXIT MENU$NC   $BLUE│$NC"
 echo -e " $BLUE╰──────────────────────────────────────────────────────────╯${NC}"
 echo -e " ╭──────────────────────────────────────────────────────────╮" | lolcat
-echo -e " $BLUE|$NC $BG                   • MUSLIM TUNNELING •                    $NC $BLUE│$NC"
+echo -e " $BLUE|$NC $BG                   • MUSLIM TUNNELING •                 $NC $BLUE│$NC"
 echo -e " ╰──────────────────────────────────────────────────────────╯" | lolcat
 read -p " Select menu : " opt
 echo -e ""
 case $opt in
-1 | 01)
-clear
-m-sshws
-;;
-2 | 02)
-clear
-m-vmess
-;;
-3 | 03)
-clear
-m-vless
-;;
-4 | 04)
-clear
-m-trojan
-;;
-5 | 05)
-clear
-m-ssws
-;;
-6 | 06)
-clear
-limitspeed
-;;
-7 | 07)
-clear
-gotop
-echo ""
-echo -e " ${GREEN} Back to menu in 1 sec ${NC}"
-sleep 1
-menu
-;;
-8 | 08)
-clear
-bot
-;;
-9 | 09)
-clear
-nano /etc/kyt.txt
-;;
-10)
-clear
-xp
-echo ""
-echo -e " ${GREEN} Back to menu in 1 sec ${NC}"
-sleep 1
-menu
-;;
-11)
-clear
-autoreboot
-;;
-12)
-clear
-prot
-echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
-menu
-;;
-13)
-clear
-speedtest
-echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
-menu
-;;
-14)
-clear
-run
-;;
-15)
-clear
-clearlog
-;;
-16)
-clear
-bw
-;;
-17)
-clear
-wget https://raw.githubusercontent.com/denbeden/lokpp/main/update.sh && chmod +x update.sh && ./update.sh
-;;
-18)
-clear
-menu-backup
-;;
-19)
-clear
-restore
-;;
-20)
-clear
-reboot
-;;
-21)
-clear
-restart
-;;
-22)
-clear
-addhost
-;;
-23)
-clear
-fixcert
-;;
-24)
-clear
-wget https://raw.githubusercontent.com/denbeden/lokpp/main/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh && rm udp-custom.sh
-;;
-25)
-clear
-clearcache
-;;
-26)
-clear
-add-bot-panel
-;;
-0 | 00)
-figlet GEEKZ
-exit
-;;
-x)
-menu
-;;
-*)
-menu
-;;
+1 | 01) m-sshws ;;
+2 | 02) m-vmess ;;
+3 | 03) m-vless ;;
+4 | 04) m-trojan ;;
+5 | 05) m-ssws ;;
+6 | 06) limitspeed ;;
+7 | 07) gotop ; echo -e " ${GREEN} Back to menu in 1 sec ${NC}" ; sleep 1 ; menu ;;
+8 | 08) bot ;;
+9 | 09) nano /etc/kyt.txt ;;
+10) xp ; echo -e " ${GREEN} Back to menu in 1 sec ${NC}" ; sleep 1 ; menu ;;
+11) autoreboot ;;
+12) prot ; echo "" ; read -n 1 -s -r -p "Press any key to back on menu" ; menu ;;
+13) speedtest ; echo "" ; read -n 1 -s -r -p "Press any key to back on menu" ; menu ;;
+14) run ;;
+15) clearlog ;;
+16) bw ;;
+17) wget https://raw.githubusercontent.com/denbeden/lokpp/main/update.sh && chmod +x update.sh && ./update.sh ;;
+18) menu-backup ;;
+19) restore ;;
+20) reboot ;;
+21) restart ;;
+22) addhost ;;
+23) fixcert ;;
+24) wget https://raw.githubusercontent.com/denbeden/lokpp/main/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh && rm udp-custom.sh ;;
+25) clearcache ;;
+26) add-bot-panel ;;
+0 | 00) figlet GEEKZ ; exit ;;
+x) menu ;;
+*) menu ;;
 esac
-exit 0
