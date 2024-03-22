@@ -22,7 +22,7 @@ CHATID="6331389328"
 KEY="7097156228:AAF4Qav6b_8ag9iaKwhdIF1E9tOpSDiQUzI"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 clear
-export IP=$( curl -sS icanhazip.com )
+export IP=$( curl -sS ipv4.icanhazip.com )
 clear
 clear && clear && clear
 clear;clear;clear
@@ -263,17 +263,17 @@ EXPSC=$(curl -sS https://raw.githubusercontent.com/denbeden/lokpp/main/perizinan
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>────────────────────</code>
-<b>    💥AUTOSCRIPT PREMIUM💥</b>
+<b>AUTOSCRIPT PREMIUM</b>
 <code>────────────────────</code>
-💥 » <code>Owner    :</code><code>$username</code>
-💥 » <code>Domain   :</code><code>$domain</code>
-💥 » <code>IPVPS    :</code><code>$IP</code>
-💥 » <code>ISP      :</code><code>$ISP</code>
-💥 » <code>OS      :</code><code>$MODEL</code>
-💥 » <code>COUNTRY    :</code><code>$CITY</code>
-💥 » <code>EXP SC  :</code><code>$masaaktif</code>
+» <code>Owner    :</code> <code>$USRSC</code>
+» <code>Domain   :</code> <code>$domain</code>
+» <code>IPVPS    :</code> <code>$IP</code>
+» <code>ISP      :</code> <code>$ISP</code>
+» <code>OS       :</code> <code>$MODEL</code>
+» <code>COUNTRY  :</code> <code>$CITY</code>
+» <code>EXP SC   :</code> <code>$EXPSC</code>
 <code>────────────────────</code>
-<b> SCRIPT NOTIF </b>
+<b>SCRIPT NOTIF AUTOMATIC</b>
 <code>────────────────────</code>
 <i>Automatic Notifications From Github</i>
 "'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://wa.me/6283151636921"}]]}'
@@ -657,11 +657,11 @@ function ins_epro(){
 clear
 print_install "Menginstall ePro WebSocket Proxy"
 wget -O /usr/bin/ws "${REPO}limit/ws" >/dev/null 2>&1
-wget -O /usr/bin/tun.conf "${REPO}limit/tun.conf" >/dev/null 2>&1
-wget -O /etc/systemd/system/ws.service "${REPO}limit/ws.service" >/dev/null 2>&1
-chmod +x /etc/systemd/system/ws.service
-chmod +x /usr/bin/ws
-chmod 644 /usr/bin/tun.conf
+    wget -O /usr/bin/tun.conf "${REPO}limit/tun.conf" >/dev/null 2>&1
+    wget -O /etc/systemd/system/ws.service "${REPO}limit/ws.service" >/dev/null 2>&1
+    chmod +x /etc/systemd/system/ws.service
+    chmod +x /usr/bin/ws
+    chmod 644 /usr/bin/tun.conf
 systemctl disable ws
 systemctl stop ws
 systemctl enable ws
@@ -686,6 +686,8 @@ iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
 netfilter-persistent reload
+
+# remove unnecessary files
 cd
 apt autoclean -y >/dev/null 2>&1
 apt autoremove -y >/dev/null 2>&1
@@ -852,5 +854,5 @@ secs_to_human "$(($(date +%s) - ${start}))"
 sudo hostnamectl set-hostname $username
 echo -e "${green} Script Successfull Installed"
 echo ""
-read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} For Reboot") "
-reboot
+read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} to continue") "
+menu
