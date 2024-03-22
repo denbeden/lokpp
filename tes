@@ -11,8 +11,8 @@ update() {
 #!/bin/bash
 
 # Konfigurasi informasi pengguna
-username="denbeden"
-token="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"
+#username="denbeden"
+#token="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"
 
 # Mengatur nama pengguna dan email GitHub
 #git config --global user.name "denbeden"
@@ -24,7 +24,7 @@ token="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"
 # Menjalankan operasi Git (contoh: git push)
     git add perizinan
     git commit -m "izinip"
-    git push https://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@github.com/denbeden/lokpp.git
+git push https://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@github.com/denbeden/lokpp.git
     git config --global credential.helper "!f() { echo password=$token; }; f"
 }
 
@@ -106,7 +106,7 @@ pesan = f"""
 <code>Exp SCRIPT :</code> <code>{tanggal}</code>
 ━━━━━━━━━━━━━━━━━━━━━
 ➣ <b>REPOSITORY INDONESIA</b>
-<code>wget https://raw.githubusercontent.com/sosohrajeh/maknyos/main/repoid && chmod +x repoid && screen -S update bash repoid</code>
+<code>wget https://raw.githubusercontent.com/petapaan/maknyos/main/repoid && chmod +x repoid && screen -S update bash repoid</code>
 
 ➣ <b>CMD INSTALL SCRIPT:</b>
 <code>apt install -y && wget -q https://raw.githubusercontent.com/denbeden/lokpp/main/setup.sh && chmod +x setup.sh && screen -S alawi bash setup.sh</code>
@@ -197,11 +197,11 @@ done
 printf "%s\n" "${lines[@]}" > perizinan
 
 if [[ $found -eq 1 ]]; then
-    echo "  Tanggal berhasil diubah untuk IP ${green}$ip.${NC}"
-    echo "  Tanggal lama: ${green}$old_date${NC}"
-    echo "  Tanggal baru: ${green}$new_date${NC}"
+    echo -e "  Tanggal berhasil diubah untuk IP ${green}$ip.${NC}"
+    echo -e "  Tanggal lama: ${green}$old_date${NC}"
+    echo -e "  Tanggal baru: ${green}$new_date${NC}"
 else
-    echo "  IP ${green}$ip tidak ditemukan dalam file.${NC}"
+    echo -e "  IP ${green}$ip tidak ditemukan dalam file.${NC}"
 fi
 }
 
@@ -281,11 +281,11 @@ done
 printf "%s\n" "${lines[@]}" > perizinan
 
 if [[ $found -eq 1 ]]; then
-    echo "  Tanggal berhasil diubah untuk IP ${green}$ip.${NC}"
-    echo "  Tanggal lama: ${green}$old_date${NC}"
-    echo "  Tanggal baru: ${green}$new_date${NC}"
+    echo -e "  Tanggal berhasil diubah untuk IP ${green}$ip.${NC}"
+    echo -e "  Tanggal lama: ${green}$old_date${NC}"
+    echo -e "  Tanggal baru: ${green}$new_date${NC}"
 else
-    echo " IP ${green}$ip tidak ditemukan dalam file.${NC}"
+    echo -e " IP ${green}$ip tidak ditemukan dalam file.${NC}"
 fi
 }
 
@@ -366,8 +366,7 @@ case $jwb in
     0 | 00) clear ; exit ;;
     *) clear ; bash news ;;
 esac
-clear
 file="tes"
-rm -rf $file
+#rm -rf $file
 echo "check your github to see this added ip permission"
 
