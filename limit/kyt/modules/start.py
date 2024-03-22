@@ -5,17 +5,17 @@ from kyt import *
 async def start(event):
 	inline = [
 [Button.inline("PANEL CREATE ACCOUNT","menu")],
-[Button.url("TELEGRAM GROUP","https://t.me/Mrz_VPN"),
+[Button.url("TELEGRAM GROUP","https://t.me/configsantri"),
 Button.url("ORDER SCRIPT","https://t.me/muslimvpn")]]
 	sender = await event.get_sender()
 	val = valid(str(sender.id))
 	if val == "false":
 		try:
-			await event.answer("Akses Ditolak", alert=True)
+			await event.answer("Order Premium to @muslimvpn", alert=True)
 		except:
-			await event.reply("Akses Ditolak")
+			await event.reply("Order Premium to @muslimvpn")
 	elif val == "true":
-		sh = f' cat /etc/ssh/.ssh.db | grep "###" | wc -l'
+		sh = f' cat /etc/ssh/.ssh.db | grep "#ssh#" | wc -l'
 		ssh = subprocess.check_output(sh, shell=True).decode("ascii")
 		vm = f' cat /etc/vmess/.vmess.db | grep "###" | wc -l'
 		vms = subprocess.check_output(vm, shell=True).decode("ascii")
@@ -31,21 +31,17 @@ Button.url("ORDER SCRIPT","https://t.me/muslimvpn")]]
 		city = subprocess.check_output(citsy, shell=True).decode("ascii")
 
 		msg = f"""
-━━━━━━━━━━━━━━━━━━━━━━━ 
-**🔰 PREMIUM PANEL MENU 🔰**
-━━━━━━━━━━━━━━━━━━━━━━━ 
-💥 **» OS     :** `{namaos.strip().replace('"','')}`
-💥 **» CITY :** `{city.strip()}`
-💥 **» DOMAIN :** `{DOMAIN}`
-💥 **» IP VPS :** `{ipsaya.strip()}`
-🤖 **» @muslimvpn**
+━━━━━━━━━━━━━━━━━━━━━━━
+**PREMIUM PANEL MENU**
+━━━━━━━━━━━━━━━━━━━━━━━
+**»** `OS     :` `{namaos.strip().replace('"','')}`
+**»** `CITY   :` `{city.strip()}`
+**»** `DOMAIN :` `{DOMAIN}`
+**»** `IP VPS :` `{ipsaya.strip()}`
+**»** @muslimvpn
 ━━━━━━━━━━━━━━━━━━━━━━━
 """
 		x = await event.edit(msg,buttons=inline)
 		if not x:
 			await event.reply(msg,buttons=inline)
-
-
-
-
 
