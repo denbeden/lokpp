@@ -7,7 +7,7 @@ async def menu(event):
 [Button.inline(" MENU SSH ","ssh")],
 [Button.inline(" MENU VMESS ","vmess"),
 Button.inline(" MENU VLESS ","vless")],
-[Button.inline(" MENU TEOJAN ","trojan"),
+[Button.inline(" MENU TROJAN ","trojan"),
 Button.inline(" MENU SHDWSK ","shadowsocks")],
 [Button.inline(" CHECK VPS INFO ","info"),
 Button.inline(" OTHER SETTING ","setting")],
