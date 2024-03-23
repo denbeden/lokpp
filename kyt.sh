@@ -1,6 +1,4 @@
 #!/bin/bash
-NS=$( cat /etc/xray/dns )
-PUB=$( cat /etc/slowdns/server.pub )
 domain=$(cat /etc/xray/domain)
 #color
 grenbo="\e[92;1m"
@@ -33,8 +31,6 @@ read -e -p "[*] Input Your Id Telegram :" admin
 echo -e BOT_TOKEN='"'$bottoken'"' >> /usr/bin/kyt/var.txt
 echo -e ADMIN='"'$admin'"' >> /usr/bin/kyt/var.txt
 echo -e DOMAIN='"'$domain'"' >> /usr/bin/kyt/var.txt
-echo -e PUB='"'$PUB'"' >> /usr/bin/kyt/var.txt
-echo -e HOST='"'$NS'"' >> /usr/bin/kyt/var.txt
 clear
 
 cat > /etc/systemd/system/kyt.service << END
@@ -59,13 +55,10 @@ rm -rf kyt.sh
 echo "Done"
 echo "Your Data Bot"
 echo -e "==============================="
-echo "Token Bot         : $bottoken"
-echo "Admin          : $admin"
-echo "Domain        : $domain"
-echo "Pub            : $PUB"
-echo "Host           : $NS"
+echo "Token Bot : $bottoken"
+echo "Admin     : $admin"
+echo "Domain    : $domain"
 echo -e "==============================="
 echo "Setting done"
-clear
 
 echo " Installations complete, type /menu on your bot"
