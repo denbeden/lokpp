@@ -108,8 +108,10 @@ Button.inline(" 9999 Days ","9999")]])
 **»** `OpenVPN UDP      :` https://{DOMAIN}:81/udp.ovpn
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
 **»** `Save Link Account:` https://{DOMAIN}:81/ssh-{user.strip()}.txt
+◇━━━━━━━━━━━━━━━━━━━━━━━◇
 **»** `Expired Until :` `{later}`
 **»** @muslimvpn
+◇━━━━━━━━━━━━━━━━━━━━━━━◇
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -220,8 +222,10 @@ Button.inline(" 60 Menit ","60")]])
 **»** `OpenVPN UDP      :` https://{DOMAIN}:81/udp.ovpn
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
 **»** `Save Link Account:` https://{DOMAIN}:81/ssh-{user.strip()}.txt
+◇━━━━━━━━━━━━━━━━━━━━━━━◇
 **»** `Expired Until:` `{exp} Menit`
 **»** @muslimvpn
+◇━━━━━━━━━━━━━━━━━━━━━━━◇
 """
 			await event.respond(msg)
 	chat = event.chat_id
