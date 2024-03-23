@@ -100,6 +100,7 @@ https://{DOMAIN}:81/vmess-{user}.txt
 ━━━━━━━━━━━━━━━━━
 **»** `Expired Until :` `{later}`
 **»** @muslimvpn
+━━━━━━━━━━━━━━━━━
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -193,6 +194,7 @@ Button.inline(" 60 Menit ","60")]])
 ━━━━━━━━━━━━━━━━━
 **»** `Expired Until :` `{exp} Minutes`
 **»** @muslimvpn
+━━━━━━━━━━━━━━━━━
 """
 			await event.respond(msg)
 	chat = event.chat_id
