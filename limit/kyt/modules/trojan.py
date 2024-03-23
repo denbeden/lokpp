@@ -57,26 +57,26 @@ Button.inline(" 60 Day ","60")]])
 			uuid = re.search("trojan://(.*?)@",b[0]).group(1)
 			msg = f"""
 **◇━━━━━━━━━━━━━━━━━◇**
-     **🔰 Xray/Trojan Account 🔰**
+     **Xray/Trojan Account**
 **◇━━━━━━━━━━━━━━━━━◇**
-**» Remarks       :** `{user}`
-**» Host Server :** `{domain}`
-**» User Quota  :** `{pw} GB`
-**» Port DNS     :** `443, 53`
-**» port TLS      :** `222-1000`
-**» Path Trojan :** `(/multi path)/trojan-ws`
-**» User ID        :** `{uuid}`
+**»** `Remarks     :` `{user}`
+**»** `Host Server :` `{domain}`
+**»** `User Quota  :` `{pw} GB`
+**»** `Port DNS    :` `443, 53`
+**»** `port TLS    :` `222-1000`
+**»** `Path Trojan :` `(/multi path)/trojan-ws`
+**»** `User ID     :` `{uuid}`
 **◇━━━━━━━━━━━━━━━━━◇**
-**» Link WS    :** 
+**»** `Link WS    :`
 `{b[0].replace(" ","")}`
 **◇━━━━━━━━━━━━━━━━━◇**
-**» Link GRPC  :** 
+**»** `Link GRPC  :`
 `{b[1].replace(" ","")}`
 **◇━━━━━━━━━━━━━━━━━◇**
-**» Format OpenClash : https://{domain}:81/trojan-{user}.txt
+**»** `Format OpenClash :` https://{domain}:81/trojan-{user}.txt
 **◇━━━━━━━━━━━━━━━━━◇**
-**Expired Until:** `{later}`
-**»⭐@muslimvpn**
+**»** `Expired Until:` `{later}`
+**»** @muslimvpn
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -99,7 +99,7 @@ async def cek_trojan(event):
 {z}
 
 **Shows Logged In Users Trojan**
-**» ⭐@muslimvpn**
+**»** @muslimvpn
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
@@ -158,24 +158,24 @@ Button.inline(" 60 Menit ","60")]])
 			uuid = re.search("trojan://(.*?)@",b[0]).group(1)
 			msg = f"""
 **◇━━━━━━━━━━━━━━━━━◇**
-     **🔰 Xray/Trojan Account 🔰**
+     **Trial Xray/Trojan Account**
 **◇━━━━━━━━━━━━━━━━━◇**
-**» Remarks       :** `{remarks}`
-**» Host Server :** `{domain}`
-**» User Quota  :** `Unlimited`
-**» Port DNS     :** `443, 53`
-**» port TLS     :** `222-1000`
-**» Path Trojan :** `(/multi path)/trojan-ws`
-**» User ID        :** `{uuid}`
+**»** `Remarks     :` `{remarks}`
+**»** `Host Server :` `{domain}`
+**»** `User Quota  :` `Unlimited`
+**»** `Port DNS    :` `443, 53`
+**»** `port TLS    :` `222-1000`
+**»** `Path Trojan :` `(/multi path)/trojan-ws`
+**»** `User ID     :` `{uuid}`
 **◇━━━━━━━━━━━━━━━━━◇**
-**» Link WS    :** 
+**»** `Link WS    :`
 `{b[0].replace(" ","")}`
 **◇━━━━━━━━━━━━━━━━━◇**
-**» Link GRPC  :** 
+**»** `Link GRPC  :` 
 `{b[1].replace(" ","")}`
 **◇━━━━━━━━━━━━━━━━━◇**
-**» Expired Until:** `{exp} Minutes`
-**»⭐@muslimvpn**
+**»** `Expired Until:` `{exp} Minutes`
+**»** @muslimvpn
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -221,13 +221,13 @@ Button.inline(" DELETE TROJAN ","delete-trojan")],
 		z = requests.get(f"http://ip-api.com/json/?fields=country,region,city,timezone,isp").json()
 		msg = f"""
 ━━━━━━━━━━━━━━━━━━━━━━━ 
- **🔰 TROJAN MANAGER 🔰**
+ **TROJAN MANAGER**
 ━━━━━━━━━━━━━━━━━━━━━━━ 
-🔰 **» Service:** `TROJAN`
-🔰 **» Hostname/IP:** `{DOMAIN}`
-🔰 **» ISP:** `{z["isp"]}`
-🔰 **» Country:** `{z["country"]}`
-⭐ **» @muslimvpn**
+**»** `Service:` `TROJAN`
+**»** `Hostname/IP:` `{DOMAIN}`
+**»** `ISP:` `{z["isp"]}`
+**»** `Country:` `{z["country"]}`
+**»** @muslimvpn
 ━━━━━━━━━━━━━━━━━━━━━━━ 
 """
 		await event.edit(msg,buttons=inline)
