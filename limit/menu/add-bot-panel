@@ -58,7 +58,7 @@ case $opt in
 02 | 2) clear ; hapus-bot ;;
 03 | 3) clear ; stop-bot ;;
 04 | 4) clear ; restart-bot ;;
-05 | 5}
+05 | 5)
 clear
 hapus-bot
 wget https://raw.githubusercontent.com/denbeden/lokpp/main/kyt.sh && chmod +x kyt.sh && ./kyt.sh ;;
