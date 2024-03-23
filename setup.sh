@@ -257,6 +257,9 @@ clear
 fi
 }
 clear
+CITY=$(curl -s ipinfo.io/city)
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10)
+MODEL=$(lsb_release -ds)
 restart_system(){
 USRSC=$(curl -sS https://raw.githubusercontent.com/denbeden/lokpp/main/perizinan | grep $MYIP | awk '{print $2}')
 EXPSC=$(curl -sS https://raw.githubusercontent.com/denbeden/lokpp/main/perizinan | grep $MYIP | awk '{print $3}')
