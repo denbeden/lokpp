@@ -27,10 +27,15 @@ NUMBER_OF_CLIENTS=$(grep -c -E "#ssh# " "/etc/ssh/.ssh.db")
                         read -rp "Select one client [1-${NUMBER_OF_CLIENTS}]: " CLIENT_NUMBER
                 fi
         done
-user=$(grep -E "#ssh# " "/etc/ssh/.ssh.db" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
+user=$(grep -E "#ssh#" "/etc/ssh/.ssh.db" | cut -d ' ' -f 2 | sed -n "${CLIENT_NUMBER}"p)
 domain=$(cat /etc/xray/domain)
-Pass=$(grep "$Pass" /etc/ssh/.ssh.db | cut -b 21-56 | sed -n "${CLIENT_NUMBER}"p)
-exp=$(grep -E "#ssh# " "/etc/ssh/.ssh.db" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
+Pass=$(grep -E "#ssh#" "/etc/ssh/.ssh.db" | cut -d ' ' -f 3 | sed -n "${CLIENT_NUMBER}"p)
+Quota=$(grep -E "#ssh#" "/etc/ssh/.ssh.db" | cut -d ' ' -f 4 | sed -n "${CLIENT_NUMBER}"p)
+iplimit=$(grep -E "#ssh#" "/etc/ssh/.ssh.db" | cut -d ' ' -f 5 | sed -n "${CLIENT_NUMBER}"p)
+masaaktif=$(grep -E "#ssh# " "/etc/ssh/.ssh.db" | cut -d ' ' -f 6 | sed -n "${CLIENT_NUMBER}"p)
+tnggl=$(grep -E "#ssh#" "/etc/ssh/.ssh.db" | cut -d ' ' -f 7 | sed -n "${CLIENT_NUMBER}"p)
+expe=$(grep -E "#ssh#" "/etc/ssh/.ssh.db" | cut -d ' ' -f 8 | sed -n "${CLIENT_NUMBER}"p)
+
 hariini=`date -d "0 days" +"%Y-%m-%d"`
 
 clear
@@ -41,9 +46,7 @@ echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━\033[0m
 echo -e "Username         : $user"
 echo -e "Password         : $Pass"
 echo -e "Host             : $domain"
-echo -e "Host Slowdns     : ${NS}"
-echo -e "Pub Key          : ${PUB}"
-echo -e "Limit IP          : ${iplim} IP"
+echo -e "Limit IP         : ${iplimit} IP"
 echo -e "Location         : $CITY"
 echo -e "Port OpenSSH     : 443, 80, 22"
 echo -e "Port DNS         : 443, 53 ,22 "
@@ -71,7 +74,7 @@ echo -e "Link Txt : https://${domain}:81/ssh-$user.txt"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "Aktif Selama     : $masaaktif Hari"
 echo -e "Dibuat Pada      : $tnggl"
-echo -e "Berakhir Pada    : $exp"
+echo -e "Berakhir Pada    : $expe"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 read -n 1 -s -r -p "Press any key to back on menu"
