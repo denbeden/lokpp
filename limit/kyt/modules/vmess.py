@@ -77,7 +77,7 @@ Button.inline(" 9999 Day ","9999")]])
 **»** `port TLS      :` `222-1000`
 **»** `Port NTLS     :` `80, 8080, 8081-9999`
 **»** `Port GRPC     :` `443`
-**»** `ser ID       :` `{z["id"]}`
+**»** `ser ID        :` `{z["id"]}`
 **»** `AlterId       :` `0`
 **»** `Security      :` `auto`
 **»** `NetWork       :` `(WS) or (gRPC)`
@@ -172,7 +172,7 @@ Button.inline(" 60 Menit ","60")]])
 **»** `Port NTLS     :` `80, 8080, 8081-9999`
 **»** `Port GRPC     :` `443`
 **»** `User ID       :` `{z["id"]}`
-**»** `AlterId       :"" `0`
+**»** `AlterId       :` `0`
 **»** `Security      :` `auto`
 **»** `NetWork       :` `(WS) or (gRPC)`
 **»** `Path TLS      :` `(/multi path)/vmess`
