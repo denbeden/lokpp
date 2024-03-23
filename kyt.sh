@@ -15,8 +15,6 @@ rm -rf bot.zip
 clear
 wget https://raw.githubusercontent.com/denbeden/lokpp/main/limit/kyt.zip
 unzip kyt.zip
-mv kyt/* /bin/kyt/
-chmod +x /bin/kyt/*
 pip3 install -r kyt/requirements.txt
 
 #isi data
