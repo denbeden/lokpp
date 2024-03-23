@@ -59,32 +59,33 @@ Button.inline(" 60 Day ","60")]])
 			# path = re.search("path=(.*)&",x[0]).group(1)
 			msg = f"""
 ━━━━━━━━━━━━━━━━━
-**🔰 Xray/Vless Account 🔰**
+**Xray/Vless Account**
 ━━━━━━━━━━━━━━━━━
-**» Remarks            :** `{user}`
-**» Host Server      :** `{DOMAIN}`
-**» User Quota       :** `{pw} GB`
-**» Port DNS          :** `443, 53`
-**» port TLS           :** `222-1000`
-**» Port NTLS         :** `80, 8080, 8081-9999`
-**» NetWork           :** `(WS) or (gRPC)`
-**» User ID              :** `{uuid}`
-**» Path Vless        :** `(/multi path)/vless `
-**» Path Dynamic  :** `http://BUG.COM/vless `
+**»** `Remarks      :` `{user}`
+**»** `Host Server  :` `{DOMAIN}`
+**»** `User Quota   :` `{pw} GB`
+**»** `Port DNS     :` `443, 53`
+**»** `port TLS     :` `222-1000`
+**»** `Port NTLS    :` `80, 8080, 8081-9999`
+**»** `NetWork      :` `(WS) or (gRPC)`
+**»** `User ID      :` `{uuid}`
+**»** `Path Vless   :` `(/multi path)/vless `
+**»** `Path Dynamic :` `http://BUG.COM/vless `
 ━━━━━━━━━━━━━━━━━
-**» Link TLS   :**
+**»** `Link TLS   :`
 `{x[0]}`
 ━━━━━━━━━━━━━━━━━
-**» Link NTLS  :** 
+**»** `Link NTLS  :`
 `{x[1].replace(" ","")}`
 ━━━━━━━━━━━━━━━━━
-**» Link GRPC  :**
+**»** `Link GRPC  :`
 `{x[2].replace(" ","")}`
 ━━━━━━━━━━━━━━━━━
-**» Format OpenClash :** https://{DOMAIN}:81/vless-{user}.txt
+**»** `Format OpenClash :` https://{DOMAIN}:81/vless-{user}.txt
 ━━━━━━━━━━━━━━━━━
-**» Expired Until:** `{later}`
-**» ⭐@muslimvpn**
+**»** `Expired Until:` `{later}`
+**»** @muslimvpn
+━━━━━━━━━━━━━━━━━
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -107,7 +108,7 @@ async def cek_vless(event):
 {z}
 
 **Shows Logged In Users Vless**
-**» ⭐@muslimvpn**
+**»** @muslimvpn
 """,buttons=[[Button.inline("‹ Main Menu ›","menu")]])
 	sender = await event.get_sender()
 	a = valid(str(sender.id))
@@ -190,30 +191,31 @@ Button.inline(" 60 Menit ","60")]])
 			# path = re.search("path=(.*)&",x[0]).group(1)
 			msg = f"""
 ━━━━━━━━━━━━━━━━━
-**🔰 Xray/Vless Account 🔰**
+**Xray/Vless Account**
 ━━━━━━━━━━━━━━━━━
-**» Remarks          :** `{remarks}`
-**» Host Server    :** `{DOMAIN}`
-**» User Quota     :** `Unlimited`
-**» Port DNS        :** `443, 53`
-**» port TLS         :** `222-1000`
-**» Port NTLS       :** `80, 8080, 8081-9999`
-**» NetWork         :** `(WS) or (gRPC)`
-**» User ID            :** `{uuid}`
-**» Path Vless       :** `(/multi path)/vless `
-**» Path Dynamic :** `http://BUG.COM/vless `
+**»** `Remarks      :` `{remarks}`
+**»** `Host Server  :` `{DOMAIN}`
+**»** `User Quota   :` `Unlimited`
+**»** `Port DNS     :` `443, 53`
+**»** `port TLS     :` `222-1000`
+**»** `Port NTLS    :` `80, 8080, 8081-9999`
+**»** `NetWork      :` `(WS) or (gRPC)`
+**»** `User ID      :` `{uuid}`
+**»** `Path Vless   :` `(/multi path)/vless `
+**»** `Path Dynamic :` `http://BUG.COM/vless `
 ━━━━━━━━━━━━━━━━━
-**» Link TLS   :** 
+**»** `Link TLS   :` 
 `{x[0]}`
 ━━━━━━━━━━━━━━━━━
-**» Link NTLS  :** 
+**»** `Link NTLS  :` 
 `{x[1].replace(" ","")}`
 ━━━━━━━━━━━━━━━━━
-**» Link GRPC  :** 
+**»** `Link GRPC  :*` 
 `{x[2].replace(" ","")}`
 ━━━━━━━━━━━━━━━━━
-**» Expired Until :** `{exp} Minutes`
-**» ⭐@muslimvpn**
+**»** `Expired Until :` `{exp} Minutes`
+**»** @muslimvpn
+━━━━━━━━━━━━━━━━━
 """
 			await event.respond(msg)
 	chat = event.chat_id
@@ -236,13 +238,13 @@ Button.inline(" DELETE VLESS ","delete-vless")],
 		z = requests.get(f"http://ip-api.com/json/?fields=country,region,city,timezone,isp").json()
 		msg = f"""
 ━━━━━━━━━━━━━━━━━━━━━━━ 
-**🔰 VLESS MANAGER 🔰**
+**VLESS MANAGER**
 ━━━━━━━━━━━━━━━━━━━━━━━ 
-💥 **» Service:** `VLESS`
-💥 **» Hostname/IP:** `{DOMAIN}`
-💥 **» ISP:** `{z["isp"]}`
-💥 **» Country:** `{z["country"]}`
-⭐ **» @muslimvpn**
+**»** `Service     :`** `VLESS`
+**»** `Hostname/IP :`** `{DOMAIN}`
+**»** `ISP         :`** `{z["isp"]}`
+**»** `Country     :`** `{z["country"]}`
+**»** @muslimvpn
 ━━━━━━━━━━━━━━━━━━━━━━━ 
 """
 		await event.edit(msg,buttons=inline)
