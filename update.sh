@@ -31,17 +31,11 @@ fun_bar() {
 }
 res1() {
     wget https://raw.githubusercontent.com/denbeden/lokpp/main/limit/menu.zip
-    wget https://raw.githubusercontent.com/denbeden/lokpp/main/limit/kyt.zip
     unzip menu.zip
-    unzip kyt.zip
     chmod +x menu/*
-    chmod +x kyt/*
     mv menu/* /usr/local/sbin
-    mv kyt/* /bin/kyt/
     rm -rf menu
-    rm -rf kyt
     rm -rf menu.zip
-    rm -rf kyt.zip
     rm -rf update.sh
 }
 netfilter-persistent
