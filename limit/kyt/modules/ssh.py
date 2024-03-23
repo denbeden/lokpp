@@ -80,35 +80,35 @@ Button.inline(" 9999 Days ","9999")]])
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
   **SSH OVPN ACCOUNT**
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
-**»** Username         :` `{user.strip()}`
-**»** Password         :` `{pw.strip()}`
-**»** Host                   :` `{DOMAIN}`
+**»** `Username         :` `{user.strip()}`
+**»** `Password         :` `{pw.strip()}`
+**»** `Host                   :` `{DOMAIN}`
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
   **PORT INFORMATION**
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
-**»** Port OpenSSH     :` `443, 80, 22`
-**»** Port Dropbear    :` `443, 109`
-**»** Port Dropbear WS :` `443, 109`
-**»** Port SSH WS      :` `80, 8080, 8081-9999 `
-**»** Port SSH SSL WS  :` `443`
-**»** Port SSL/TLS     :` `222-1000`
-**»** Port OVPN WS SSL :` `443`
-**»** Port OVPN SSL    :` `443`
-**»** Port OVPN TCP    :` `443, 1194`
-**»** Port OVPN UDP    :` `1-65535`
-**»** Proxy Squid      :` `3128`
-**»** BadVPN UDP       :` `7100, 7300, 7300`
+**»** `Port OpenSSH     :` `443, 80, 22`
+**»** `Port Dropbear    :` `443, 109`
+**»** `Port Dropbear WS :` `443, 109`
+**»** `Port SSH WS      :` `80, 8080, 8081-9999 `
+**»** `Port SSH SSL WS  :` `443`
+**»** `Port SSL/TLS     :` `222-1000`
+**»** `Port OVPN WS SSL :` `443`
+**»** `Port OVPN SSL    :` `443`
+**»** `Port OVPN TCP    :` `443, 1194`
+**»** `Port OVPN UDP    :` `1-65535`
+**»** `Proxy Squid      :` `3128`
+**»** `BadVPN UDP       :` `7100, 7300, 7300`
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
-**»** Payload WSS      :`
+**»** `Payload WSS      :`
 `GET wss://BUG.COM/ HTTP/1.1[crlf]Host: {DOMAIN}[crlf]Upgrade: websocket[crlf][crlf]`
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
-**»** OpenVPN WS SSL   :` https://{DOMAIN}:81/ws-ssl.ovpn
-**»** OpenVPN SSL      :` https://{DOMAIN}:81/ssl.ovpn
-**»** OpenVPN TCP      :` https://{DOMAIN}:81/tcp.ovpn
-**»** OpenVPN UDP      :` https://{DOMAIN}:81/udp.ovpn
+**»** `OpenVPN WS SSL   :` https://{DOMAIN}:81/ws-ssl.ovpn
+**»** `OpenVPN SSL      :` https://{DOMAIN}:81/ssl.ovpn
+**»** `OpenVPN TCP      :` https://{DOMAIN}:81/tcp.ovpn
+**»** `OpenVPN UDP      :` https://{DOMAIN}:81/udp.ovpn
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
-**»** Save Link Account:` https://{DOMAIN}:81/ssh-{user.strip()}.txt
-**»** Expired Until :` `{later}`
+**»** `Save Link Account:` https://{DOMAIN}:81/ssh-{user.strip()}.txt
+**»** `Expired Until :` `{later}`
 **»** @muslimvpn
 """
 			await event.respond(msg)
@@ -262,8 +262,7 @@ async def ssh(event):
 Button.inline(" CREATE SSH ","create-ssh")],
 [Button.inline(" DELETE SSH ","delete-ssh"),
 Button.inline(" CHECK Login SSH ","login-ssh")],
-[Button.inline(" SHOW All USER SSH ","show-ssh"),
-Button.inline(" REGIS IP ","regis")],
+[Button.inline(" SHOW All USER SSH ","show-ssh")],
 [Button.inline("‹ Main Menu ›","menu")]]
 		z = requests.get(f"http://ip-api.com/json/?fields=country,region,city,timezone,isp").json()
 		msg = f"""
@@ -274,7 +273,7 @@ Button.inline(" REGIS IP ","regis")],
 **»** `Host   :` `{DOMAIN}`
 **»** `ISP    :` `{z["isp"]}`
 **»** `Country:` `{z["country"]}`
-**»** @muslimvpn**
+**»** @muslimvpn
 ━━━━━━━━━━━━━━━━━━━━━━━
 """
 		await event.edit(msg,buttons=inline)
