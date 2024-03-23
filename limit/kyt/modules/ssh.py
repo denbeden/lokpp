@@ -82,7 +82,7 @@ Button.inline(" 9999 Days ","9999")]])
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
 **»** `Username         :` `{user.strip()}`
 **»** `Password         :` `{pw.strip()}`
-**»** `Host                   :` `{DOMAIN}`
+**»** `Host             :` `{DOMAIN}`
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
   **PORT INFORMATION**
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
@@ -98,6 +98,12 @@ Button.inline(" 9999 Days ","9999")]])
 **»** `Port OVPN UDP    :` `1-65535`
 **»** `Proxy Squid      :` `3128`
 **»** `BadVPN UDP       :` `7100, 7300, 7300`
+◇━━━━━━━━━━━━━━━━━━━━━━━◇
+**»** `SSH UDP          :`
+`{DOMAIN:1-65535@{user.strip()}:{pw.strip()}`
+◇━━━━━━━━━━━━━━━━━━━━━━━◇
+**»** `SSH HTTP CUSTOM  :`
+`{DOMAIN:80@{user.strip()}:{pw.strip()}`
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
 **»** `Payload WSS      :`
 `GET wss://BUG.COM/ HTTP/1.1[crlf]Host: {DOMAIN}[crlf]Upgrade: websocket[crlf][crlf]`
@@ -212,6 +218,12 @@ Button.inline(" 60 Menit ","60")]])
 **»** `Port OVPN UDP    :` `1-65535`
 **»** `Proxy Squid      :` `3128`
 **»** `BadVPN UDP       :` `7100, 7300, 7300`
+◇━━━━━━━━━━━━━━━━━━━━━━━◇
+**»** `SSH UDP          :`
+`{DOMAIN:1-65535@{user.strip()}:{pw.strip()}`
+◇━━━━━━━━━━━━━━━━━━━━━━━◇
+**»** `SSH HTTP CUSTOM  :`
+`{DOMAIN:80@{user.strip()}:{pw.strip()}`
 ◇━━━━━━━━━━━━━━━━━━━━━━━◇
 **»** `Payload WSS      :`
 `GET wss://BUG.COM/ HTTP/1.1[crlf]Host: {DOMAIN}[crlf]Upgrade: websocket[crlf][crlf]`
