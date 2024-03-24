@@ -1,15 +1,14 @@
 #!/bin/bash
-MYIP=$(wget -qO- icanhazip.com);
+MYIP=$(wget -qO- ipv4.icanhazip.com);
 apt install jq curl -y
 read -p "Masukan Domain (contoh : mrz)" domen
-DOMAIN=mypremium.biz.id
-sub=${domen}
-#(</dev/urandom tr -dc a-z0-9 | head -c5)
-dns=${sub}.mypremium.biz.id
-CF_ID=andyyuda41@gmail.com
-CF_KEY=0d626234700bad388d6d07b49c42901445d1c
+DOMAIN=wush.my.id
+sub=$(</dev/urandom tr -dc a-z0-9 | head -c 5)
+dns=${sub}.${DOMAIN}
+CF_ID=vpsvpsku@gmail.com
+CF_KEY="cb9b858e75a955df979cf4bff74839df1943d"
 set -euo pipefail
-IP=$(wget -qO- icanhazip.com);
+IP=$(wget -qO- ipv4.icanhazip.com);
 echo "Updating DNS for ${dns}..."
 ZONE=$(curl -sLX GET "https://api.cloudflare.com/client/v4/zones?name=${DOMAIN}&status=active" \
      -H "X-Auth-Email: ${CF_ID}" \
